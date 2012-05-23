@@ -1,5 +1,7 @@
 var http = require('http');
 http.createServer(function (req, res) {
+  var date = new Date();
+  console.log(date.toLocaleString() + " : Handling new request");
   res.writeHead(200, {'Content-Type': 'text/html'});
   res.write("<html><head><title>InstaNode</title></head><body>");
   res.write("<h1>This is InstaNode</h1>");
