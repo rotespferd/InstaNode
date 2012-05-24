@@ -26,5 +26,5 @@ function cropImg(origFile, resultFile, x, y, width, height) {
 }
 
 function sepiaImg(origFile, resultFile, rate) {
-  var query = command;
+  var query = command + " " + origFile + " -sepia-tone " + rate + "% " + resultFile;
 }
